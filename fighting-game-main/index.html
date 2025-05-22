@@ -1,0 +1,153 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  
+  <title>Samurai</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Press Start 2P', cursive;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url(../Captura\ de\ Tela\ 2025-05-22\ às\ 11.07.07.png);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .health-bar {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      justify-content: space-between;
+    }
+
+    .bar {
+      position: relative;
+      width: 100%;
+      height: 30px;
+    }
+
+    .bar-left {
+      display: flex;
+      justify-content: flex-end;
+      border-top: 4px solid white;
+      border-left: 4px solid white;
+      border-bottom: 4px solid white;
+    }
+
+    .bar-right {
+      border-top: 4px solid white;
+      border-right: 4px solid white;
+      border-bottom: 4px solid white;
+    }
+
+    .bar-background {
+      background-color: red;
+      height: 100%;
+      width: 100%;
+    }
+
+    #playerHealth,
+    #enemyHealth {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background: #818cf8;
+    }
+
+    #playerHealth {
+      right: 0;
+      width: 100%;
+    }
+
+    #enemyHealth {
+      left: 0;
+      right: 0;
+    }
+
+    #timer {
+      background-color: black;
+      width: 100px;
+      height: 50px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      border: 4px solid white;
+      z-index: 1;
+    }
+
+    #displayText {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- health bars and timer -->
+    <div class="health-bar">
+      <!-- player health -->
+      <div class="bar bar-left">
+        <div class="bar-background"></div>
+        <div id="playerHealth"></div>
+      </div>
+
+      <!-- timer -->
+      <div id="timer">10</div>
+
+      <!-- enemy health -->
+      <div class="bar bar-right">
+        <div class="bar-background"></div>
+        <div id="enemyHealth"></div>
+      </div>
+    </div>
+
+    <!-- display text -->
+    <div id="displayText">Tie</div>
+
+    <!-- canvas -->
+    <canvas></canvas>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/classes.js"></script>
+  <script src="index.js"></script>
+</body>

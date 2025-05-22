@@ -1,0 +1,78 @@
+
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+                
+
+body{
+background-image: url(./Captura\ de\ Tela\ 2025-05-22\ às\ 11.07.07.png);
+background-size: cover;
+}
+
+#title{
+    justify-self: center;
+    font-family: 'Minecraft', sans-serif;
+                                                
+    font-size: 55pt;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: space-around;
+    margin-top: 15%;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#play{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    text-decoration: none  ;
+    color: white    ;
+    font-family: 'Minecraft', sans-serif;
+  
+    
+}
+
+#play:hover{
+    transform: scale(1.7);
+    transition: 300ms;
+    opacity: 0.2;
+}
+
+  .botao-sobre {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      box-shadow: 0 4px #3e8e41;
+      margin-top: 25px;
+      font-family: 'Minecraft', sans-serif;
+    }
+
+    .botao-sobre:hover {
+      background-color: #45a049;
+      
+    }
+
+    .icone {
+      width: 0; 
+      height: 0; 
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 15px solid white;
+      margin-right: 10px;}

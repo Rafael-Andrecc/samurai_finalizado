@@ -1,0 +1,28 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+#Criadores{
+display: flex;
+flex-direction: row;
+justify-content: space-around;  
+justify-self: center;
+margin-top: 20%;
+width: 100%;
+}
+
+body{
+  background-image: url(./Captura\ de\ Tela\ 2025-05-22\ às\ 11.07.07.png);
+background-size: cover;}
+#inside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    color:gray;
+    font-size: x-large;
+
+}
+
+#inside img{
+    width: 300px;
+    height: 300px;
+}
